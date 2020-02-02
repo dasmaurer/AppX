@@ -8,10 +8,12 @@ const postsRoutes = require("./routes/posts");
 const commentsRoutes = require("./routes/comments");
 const profilesRoutes = require("./routes/profiles");
 
-router.use("/user", userRoutes);
+//Agrego los endpoints y callbacks a los archivos **Routes
+router.use("/users", userRoutes);
 router.use("/auth", authRoutes);
+/*
 router.use("/posts", postsRoutes);
 router.use("/comments", commentsRoutes);
 router.use("/profiles", profilesRoutes);
-
+*/
 module.exports = router;
